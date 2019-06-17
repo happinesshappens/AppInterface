@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-5">
+            <div class="container">
+                <form role="form" method="post">
+                    <div class="form-group">
+                        <label>Choose your time zone</label><br />
+                        <input type="text" size="40" name="local_zone" />
+                    </div>
+                    <div class="form-group">
+                        <label>Write the exact time and date</label><br />
+                        <input type="text" size="40" name="local_date"/>
+                    </div>
+                    <div class="form-group">
+                        <label>Write address of NTP server</label><br />
+                        <input type="text" size="40" name="ntp_server" />
+                    </div>
+                    <!--<div class="form-group">
+                        <button type="button" class="btn btn-success">Complete</button>
+                    </div>-->
+                    <div class="form-group">
+                        <a href="/addadmin" role="button" class="btn btn-primary">Back</a>
+                        <a href="/snmpdevices" role="button" class="btn btn-primary">Next</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="col-md-7">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    panel for test messages
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

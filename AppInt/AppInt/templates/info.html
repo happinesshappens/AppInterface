@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-5">
+            <div class="container">
+                <form role="form" method="post">
+                    <!--<div class="form-group">
+                        <label>Users group name for work with zabbix</label><br />
+                        <input type="text" size="40" name="server_name" />
+                    </div>
+                    <div class="form-group">
+                        <label>User login with administrator role</label><br />
+                        <input type="text" size="40" name="domain_name" />
+                    </div>
+                    <div class="form-group">
+                        <label>User password with administrator role</label><br />
+                        <input type="text" size="40" name="administrator_login" />
+                    </div>-->
+                    <!--<div class="form-group">
+                        <button type="button" class="btn btn-success">Complete</button>
+                    </div>-->
+                    <div class="form-group">
+                        <a href="/snmpdevices" role="button" class="btn btn-primary">Back</a>
+                        <a href="/" role="button" class="btn btn-primary" disabled>Next</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="col-md-7">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    panel for test messages
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
