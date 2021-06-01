@@ -11,5 +11,5 @@ py-zabbix==1.1.5
 pyasn1==0.4.5
 pyzabbix==0.7.5
 requests==2.22.0
-urllib3==1.25.3
+urllib3==1.26.5
 Werkzeug==0.15.4
